@@ -1,0 +1,38 @@
+<div class="container">
+
+  <div class="card-body">
+    <h5 class="card-title">{{titulo}}</h5>
+    <form>
+      <div class="form-group row">
+        <label for="nombre" class="col-form-label col-sm-2">Nombre</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" name="nombre" [(ngModel)]="producto.name">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="description" class="col-form-label col-sm-2">Descripcion</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" name="description" [(ngModel)]="producto.description">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="valor" class="col-form-label col-sm-2">Valor</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" name="valor" [(ngModel)]="producto.valor">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="imageURL" class="col-form-label col-sm-2">URL Imagen</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" name="imageURL" [(ngModel)]="producto.imageURL">
+        </div>
+      </div>
+
+      <button class="btn btn-success" role="button" (click)='update()'>Actualizar</button>
+    </form>
+  </div>
+
+</div>
